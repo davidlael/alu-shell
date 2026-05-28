@@ -1,1 +1,1 @@
-Shell basics project repository
+# alu-shell
