@@ -1,3 +1,1 @@
-#!/bin/bash
-echo $(python3 -c "w='water';s='stir.';o='bestchol';W='$WATER';S='$STIR';dw=sum(w.index(c)*5**i for i,c in enumerate(W[::-1]));ds=sum(s.index(c)*5**i for i,c in enumerate(S[::-1]));t=dw+ds;r='';exec(\"while t:\\n r=o[t%8]+r;t//=8\");print(r or o[0])")
-
+#!/bin/bash\necho $(python3 -c "w='water';s='stir.';o='bestchol';W='$WATER';S='$STIR';dw=sum(w.index(c)*5**i for i,c in enumerate(W[::-1]));ds=sum(s.index(c)*5**i for i,c in enumerate(S[::-1]));t=dw+ds;r='';exec(\"while t:\\n r=o[t%8]+r;t//=8\");print(r or o[0])")
