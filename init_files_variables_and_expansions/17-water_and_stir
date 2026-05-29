@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((10#$(echo "$WATER"|tr water 01234)+10#$(echo "$STIR"|tr stir. 01234)))
+w=$(echo "$WATER"|tr water 01234); s=$(echo "$STIR"|tr stir. 01234); n=$((10#$w+10#$s)); o=bestchol; r=""; while [ $n -gt 0 ]; do r=${o:$((n%8)):1}$r; n=$((n/8)); done; echo "${r:-b}"
